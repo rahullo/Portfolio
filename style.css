@@ -1,0 +1,38 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.main-container {
+    background-color: aqua;
+    width: 100%;
+    height: 200rem;
+    background-color: white;
+}
+
+.nav-container {
+    width: 100%;
+    height: 5rem;
+    background-color: aquamarine;
+}
+
+.nav-items {
+    display: flex;
+    /* justify-content: space-around; */
+}
+
+.logo {
+    /* width: 20%; */
+    height: 5rem;
+    background-color: aliceblue;
+    flex: 1;
+}
+
+.navs {
+    /* width: 80%; */
+    height: 5rem;
+    background-color: antiquewhite;
+    flex: 3;
+    display: flex;
+    justify-content: space-around;
+}
