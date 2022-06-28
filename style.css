@@ -157,6 +157,20 @@ h4 {
     height: 40rem;
     /* background-color: aliceblue; */
     background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+}
+
+.section-name {
+    margin-bottom: -3rem;
+}
+
+.section-name h1 {
+    padding-left: 45%;
+    color: orangered;
+}
+
+.skill-content {
+    width: 100%;
+    height: 38rem;
     display: flex;
     justify-content: space-around;
 }
