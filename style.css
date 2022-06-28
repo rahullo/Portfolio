@@ -72,9 +72,10 @@ li {
 .my-image {
     width: 50%;
     height: 41.5rem;
-    background-image: url('img/my-image.png');
+    background-image: url('img/my-image2.png');
     background-repeat: no-repeat;
     background-size: cover;
+    box-sizing: border-box;
 }
 
 .discription {
@@ -153,23 +154,36 @@ h4 {
 
 .skill-section {
     width: 100%;
-    height: 45rem;
-    background-color: blueviolet;
+    height: 40rem;
+    /* background-color: aliceblue; */
+    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
     display: flex;
     justify-content: space-around;
 }
+
+
+/* .skills {
+    border-radius: 4rem;
+} */
 
 .programing-langs,
 .frameworks,
 .additional-skills {
     width: 30rem;
     height: 30rem;
-    background-color: antiquewhite;
+    /* background-color: antiquewhite; */
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
     padding: 2rem;
     margin: auto;
+    border-radius: 3rem;
 }
 
-.languages {
+.skill-header {
+    width: 27rem;
+    height: 10rem;
+}
+
+.skill-items {
     margin-top: 2rem;
     width: 26rem;
     height: 7rem;
@@ -181,9 +195,16 @@ h4 {
 .skill-lng {
     width: 5rem;
     height: 5rem;
-    background-color: aqua;
+    background-color: gainsboro;
     border-radius: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: 3px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.skill-lng:hover {
+    transform: scale(1.1);
+    transition: all .7s;
 }
