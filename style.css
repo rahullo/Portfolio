@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+li {
+    list-style: none;
+}
+
 .main-container {
     background-color: aqua;
     width: 100%;
@@ -142,4 +146,44 @@ h4 {
     width: 100%;
     height: 41.5rem;
     background-color: rgb(189, 228, 228);
+}
+
+
+/* Skills Page */
+
+.skill-section {
+    width: 100%;
+    height: 45rem;
+    background-color: blueviolet;
+    display: flex;
+    justify-content: space-around;
+}
+
+.programing-langs,
+.frameworks,
+.additional-skills {
+    width: 30rem;
+    height: 30rem;
+    background-color: antiquewhite;
+    padding: 2rem;
+    margin: auto;
+}
+
+.languages {
+    margin-top: 2rem;
+    width: 26rem;
+    height: 7rem;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 1rem;
+}
+
+.skill-lng {
+    width: 5rem;
+    height: 5rem;
+    background-color: aqua;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
