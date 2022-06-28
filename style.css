@@ -227,3 +227,20 @@ h4 {
     /* background-color: aliceblue; */
     background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
 }
+
+.project-content {
+    width: 100%;
+    height: 38rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.project {
+    width: 30rem;
+    height: 30rem;
+    /* background-color: antiquewhite; */
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+    padding: 2rem;
+    margin: auto;
+    border-radius: 3rem;
+}
