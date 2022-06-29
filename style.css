@@ -249,3 +249,43 @@ h4 {
     width: 20rem;
     height: 20rem;
 }
+
+.education-section {
+    width: 100%;
+    height: 40rem;
+    /* background-color: rgb(53, 125, 187); */
+    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+}
+
+.education-content {
+    width: 100%;
+    height: 38rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.education {
+    width: 30rem;
+    height: 30rem;
+    /* background-color: antiquewhite; */
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+    padding: 2rem;
+    margin: auto;
+    border-radius: 3rem;
+}
+
+.institute-img {
+    width: 20rem;
+    height: 20rem;
+    margin-left: 3rem;
+    border-radius: 1rem;
+}
+
+.institute-about {
+    width: 25rem;
+    height: 6rem;
+}
+
+.institute-name {
+    margin-left: 1rem;
+}
