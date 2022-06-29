@@ -12,7 +12,7 @@ li {
 .main-container {
     background-color: aqua;
     width: 100%;
-    height: 200rem;
+    height: 207rem;
     background-color: white;
 }
 
@@ -243,4 +243,9 @@ h4 {
     padding: 2rem;
     margin: auto;
     border-radius: 3rem;
+}
+
+.project-img {
+    width: 20rem;
+    height: 20rem;
 }
