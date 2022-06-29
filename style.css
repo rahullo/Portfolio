@@ -231,13 +231,16 @@ h4 {
 .project-content {
     width: 100%;
     height: 38rem;
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    gap: var(--size-4);
+    grid-auto-flow: column;
+    grid-auto-columns: 28%;
+    overflow-x: auto;
 }
 
 .project {
-    width: 30rem;
-    height: 30rem;
+    width: 25rem;
+    height: 25rem;
     /* background-color: antiquewhite; */
     background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
     padding: 2rem;
@@ -245,10 +248,22 @@ h4 {
     border-radius: 3rem;
 }
 
+.project:hover {
+    transform: scale(1.1);
+    transition: all .7s;
+    cursor: pointer;
+}
+
 .project-img {
     width: 20rem;
     height: 20rem;
 }
+
+
+/* Slides */
+
+
+/* Education Section */
 
 .education-section {
     width: 100%;
@@ -288,4 +303,251 @@ h4 {
 
 .institute-name {
     margin-left: 1rem;
+}
+
+@media (max-width: 991px) {
+    .main-container {
+        background-color: aqua;
+        width: 40.5rem;
+        height: 168rem;
+        background-color: rgb(198, 175, 175);
+    }
+    .nav-container {
+        width: 100%;
+        height: 5rem;
+        display: flex;
+    }
+    .logo {
+        /* width: 20%; */
+        height: 5rem;
+        background-color: aliceblue;
+        flex: 1;
+    }
+    .nav-items {
+        flex: 3;
+    }
+    .navs {
+        height: 5rem;
+        background-color: aliceblue;
+        display: flex;
+        justify-content: space-around;
+        list-style: none;
+    }
+    .nav-item {
+        width: 8rem;
+        height: 2rem;
+        margin-top: 1.5rem;
+        font-weight: 900;
+        font-size: 1rem;
+        box-sizing: border-box;
+    }
+    .skill,
+    .home {
+        width: 4rem;
+    }
+    .nav-item:hover {
+        cursor: pointer;
+    }
+    /* Home Page */
+    .home-page {
+        width: 100%;
+        height: 31.5rem;
+        display: flex;
+    }
+    .my-image {
+        width: 50%;
+        height: 31.5rem;
+        background-repeat: no-repeat;
+        background-size: cover;
+        box-sizing: border-box;
+    }
+    .discription {
+        width: 50%;
+        height: 31.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+    }
+    .intro {
+        width: 25rem;
+        height: 30rem;
+        background-color: blue;
+    }
+    h3 {
+        margin-left: 1rem;
+        font-size: 1rem;
+        font-weight: 900;
+        text-shadow: 0px 1px, 1px 0px, 1px 1px;
+    }
+    h2 {
+        margin-left: 1rem;
+        color: orangered;
+        text-shadow: 0px 1px, 1px 0px, 1px 1px;
+        margin-bottom: 0;
+    }
+    h1 {
+        margin-left: 1rem;
+        font-size: 1.5rem;
+        text-shadow: 0px 1px, 1px 0px, 1px 1px;
+    }
+    .dot {
+        color: orangered;
+        text-shadow: 0px 1px, 1px 0px, 1px 1px;
+        font-size: 5rem;
+    }
+    h4 {
+        margin-left: 2rem;
+        font-size: .7rem;
+    }
+    .social-media-handles {
+        width: 20rem;
+        height: 2rem;
+        margin: 1rem 0 0 2rem;
+        display: flex;
+        justify-content: space-around;
+    }
+    .cv-button {
+        width: 7rem;
+        height: 3rem;
+        background-color: orangered;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-shadow: 0px 1px, 1px 0px, 1px 1px;
+        margin: 1rem 0 0 2rem;
+    }
+    .cv-button:hover {
+        cursor: pointer;
+    }
+    /* About me page */
+    .about-me-page {
+        width: 100%;
+        height: 30rem;
+        background-color: rgb(189, 228, 228);
+    }
+    /* Skills Page */
+    .skill-section {
+        width: 100%;
+        height: 30rem;
+        /* background-color: aliceblue; */
+        background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+    }
+    .section-name h1 {
+        padding-left: 45%;
+        color: orangered;
+    }
+    .skill-content {
+        width: 100%;
+        height: 25rem;
+        display: grid;
+        grid-auto-flow: column;
+    }
+    .programing-langs,
+    .frameworks,
+    .additional-skills {
+        width: 12rem;
+        height: 12rem;
+        /* background-color: antiquewhite; */
+        background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+        padding: 2rem;
+        margin: auto;
+        border-radius: 3rem;
+    }
+    .skill-h1 {
+        font-size: 1rem;
+    }
+    .skill-header {
+        width: 8rem;
+        height: 3rem;
+    }
+    .skill-items {
+        margin-top: 2rem;
+        width: 9rem;
+        height: 3rem;
+        display: grid;
+        grid-auto-flow: column;
+        padding-top: .5rem;
+    }
+    .skill-logo {
+        width: 30px;
+        height: 30px;
+    }
+    .skill-lng {
+        width: 2rem;
+        height: 2rem;
+        border-radius: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 3px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    }
+    .skill-lng:hover {
+        transform: scale(1.1);
+        transition: all .7s;
+    }
+    /* Project Page */
+    .project-section {
+        width: 100%;
+        height: 30rem;
+        background-color: rgb(44, 98, 146);
+        /* background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%); */
+    }
+    .project-content {
+        width: 100%;
+        height: 25rem;
+        display: grid;
+        gap: var(--size-4);
+        grid-auto-flow: column;
+        grid-auto-columns: 46%;
+        overflow-x: auto;
+    }
+    .project {
+        width: 15rem;
+        height: 15rem;
+        /* background-color: antiquewhite; */
+        background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+        padding: 2rem;
+        margin: auto;
+        border-radius: 3rem;
+    }
+    .project-img {
+        width: 10rem;
+        height: 10rem;
+    }
+    /* Education Section */
+    .education-section {
+        width: 100%;
+        height: 30rem;
+        background-color: rgb(53, 125, 187);
+        /* background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%); */
+    }
+    .education-content {
+        width: 100%;
+        height: 25rem;
+        display: flex;
+        justify-content: space-around;
+    }
+    .education {
+        width: 15rem;
+        height: 15rem;
+        /* background-color: antiquewhite; */
+        background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+        padding: 2rem;
+        margin: auto;
+        border-radius: 3rem;
+    }
+    .institute-img {
+        width: 10rem;
+        height: 10rem;
+        border-radius: 1rem;
+    }
+    .institute-about {
+        width: 25rem;
+        height: 6rem;
+    }
+    .institute-name {
+        margin-left: 1rem;
+    }
 }
