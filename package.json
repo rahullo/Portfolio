@@ -1,0 +1,22 @@
+{
+    "name": "portfolio",
+    "version": "1.0.0",
+    "description": "This website is my Portfolio",
+    "scripts": {
+        "start": "parcel index.html",
+        "build": "parcel build index.html"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/rahullo/Portfolio.git"
+    },
+    "author": "'Rahul'",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/rahullo/Portfolio/issues"
+    },
+    "homepage": "https://github.com/rahullo/Portfolio#readme",
+    "devDependencies": {
+        "parcel": "^2.6.2"
+    }
+}

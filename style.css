@@ -305,7 +305,7 @@ h4 {
     margin-left: 1rem;
 }
 
-@media (max-width: 991px) {
+@media only screen and (max-width: 991px) and (min-width: 450px) {
     .main-container {
         background-color: aqua;
         width: 40.5rem;
@@ -372,7 +372,6 @@ h4 {
     .intro {
         width: 25rem;
         height: 30rem;
-        background-color: blue;
     }
     h3 {
         margin-left: 1rem;
@@ -549,5 +548,271 @@ h4 {
     }
     .institute-name {
         margin-left: 1rem;
+    }
+}
+
+
+/* For Mobile */
+
+@media only screen and (max-width: 450px) and (min-width: 300px) {
+    .main-container {
+        width: 25.8rem;
+        height: 68rem;
+    }
+    .nav-container {
+        width: 25.8rem;
+        height: 3rem;
+        display: flex;
+    }
+    .logo {
+        width: 20%;
+        height: 3rem;
+        background-color: aliceblue;
+    }
+    .nav-items {
+        width: 80%;
+    }
+    .navs {
+        height: 4rem;
+        display: flex;
+        justify-content: space-around;
+        list-style: none;
+        background-color: aliceblue;
+        margin-top: -1rem;
+    }
+    .nav-item {
+        height: 2rem;
+        font-weight: 900;
+        font-size: .7rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .nav-item:hover {
+        cursor: pointer;
+    }
+    /* Home Page */
+    .home-page {
+        width: 100%;
+        height: 21.5rem;
+        display: flex;
+    }
+    .my-image {
+        width: 100%;
+        height: 21.5rem;
+        background-repeat: no-repeat;
+        background-size: cover;
+        box-sizing: border-box;
+    }
+    .discription {
+        width: 50%;
+        height: 21.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(0, 0, 0, 0.1);
+        /* opacity: .3; */
+    }
+    .intro {
+        width: 13rem;
+        height: 20rem;
+    }
+    h3 {
+        margin-left: 1rem;
+        font-size: .6rem;
+        font-weight: 900;
+        text-shadow: 0px 1px, 1px 0px, 1px 1px;
+    }
+    h2 {
+        margin-left: 1rem;
+        text-shadow: 0px 1px, 1px 0px, 1px 1px;
+        margin-bottom: 0;
+    }
+    /* .roll {
+        height: 2rem;
+        margin-left: 1rem;
+        font-size: 1rem;
+        background-color: green;
+        text-shadow: 0px 1px, 1px 0px, 1px 1px;
+    } */
+    h1 {
+        height: 2rem;
+        margin-left: 1rem;
+        font-size: 1rem;
+        text-shadow: 0px 1px, 1px 0px, 1px 1px;
+    }
+    h6 {
+        height: 2rem;
+        margin-left: 1rem;
+        font-size: 1rem;
+        text-shadow: 0px 1px, 1px 0px, 1px 1px;
+    }
+    .dot {
+        color: orangered;
+        text-shadow: 0px 1px, 1px 0px, 1px 1px;
+        font-size: 5rem;
+    }
+    h4 {
+        margin-left: 2rem;
+        font-size: .4rem;
+    }
+    .social-media-handles {
+        width: 10rem;
+        height: 2rem;
+        margin: 1rem 0 0 2rem;
+        display: flex;
+        justify-content: space-around;
+    }
+    .cv-button {
+        width: 5rem;
+        height: 2rem;
+        background-color: orangered;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-shadow: 0px 1px, 1px 0px, 1px 1px;
+        margin: 1rem 0 0 2rem;
+        border-radius: 2rem;
+    }
+    .cv-button:hover {
+        cursor: pointer;
+    }
+    /* About me page */
+    .about-me-page {
+        width: 100%;
+        height: 20rem;
+        background-color: rgb(189, 228, 228);
+    }
+    /* Skills Page */
+    .skill-section {
+        width: 100%;
+        height: 15rem;
+        /* background-color: aliceblue; */
+        background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+    }
+    .section-name h6 {
+        padding-left: 45%;
+        color: orangered;
+    }
+    .skill-content {
+        width: 100%;
+        height: 17rem;
+        display: grid;
+        grid-auto-flow: column;
+    }
+    .programing-langs,
+    .frameworks,
+    .additional-skills {
+        width: 8rem;
+        height: 8rem;
+        background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+        padding: 2rem;
+        margin: auto;
+        border-radius: 3rem;
+    }
+    .skill-h6 {
+        font-size: .6rem;
+    }
+    .skill-header {
+        width: 5rem;
+        height: 2rem;
+        margin-left: -1rem;
+    }
+    .skill-items {
+        margin-top: .7rem;
+        width: 4rem;
+        height: 3rem;
+        display: grid;
+        grid-auto-flow: column;
+        padding-top: .5rem;
+    }
+    .skill-logo {
+        width: 20px;
+        height: 20px;
+    }
+    .skill-lng {
+        width: 1.7rem;
+        height: 1rem;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 3px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    }
+    .skill-lng:hover {
+        transform: scale(1.1);
+        transition: all .7s;
+    }
+    /* Project Page */
+    .project-section {
+        width: 100%;
+        height: 20rem;
+        background-color: rgb(44, 98, 146);
+        /* background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%); */
+    }
+    .project-content {
+        width: 100%;
+        height: 20rem;
+        display: grid;
+        gap: var(--size-4);
+        grid-auto-flow: column;
+        grid-auto-columns: 46%;
+        overflow-x: auto;
+    }
+    .project {
+        width: 10rem;
+        height: 10rem;
+        /* background-color: antiquewhite; */
+        background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+        margin: auto;
+        border-radius: 3rem;
+        padding: 2.3rem;
+    }
+    .project-img {
+        width: 5rem;
+        height: 5rem;
+    }
+    /* Education Section */
+    .education-section {
+        width: 100%;
+        height: 20rem;
+        background-color: rgb(53, 125, 187);
+        /* background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%); */
+    }
+    .education-content {
+        width: 100%;
+        height: 25rem;
+        display: flex;
+        justify-content: space-around;
+    }
+    .education {
+        width: 10rem;
+        height: 10rem;
+        /* background-color: antiquewhite; */
+        background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+        /* padding: -2rem; */
+        /* margin: auto; */
+        border-radius: 3rem;
+    }
+    .img-div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: none;
+    }
+    .institute-img {
+        width: 7rem;
+        height: 5rem;
+        border-radius: 1rem;
+        margin-left: -.2rem;
+    }
+    .institute-about {
+        width: 7rem;
+        height: 6rem;
+        font-size: .5rem;
+    }
+    .institute-name {
+        margin-left: .4rem;
     }
 }
