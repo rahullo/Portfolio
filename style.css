@@ -140,13 +140,40 @@ h4 {
     cursor: pointer;
 }
 
+a h5 {
+    color: black;
+}
+
 
 /* About me page */
 
 .about-me-page {
     width: 100%;
     height: 41.5rem;
-    background-color: rgb(189, 228, 228);
+    background-color: aliceblue;
+}
+
+.job-title {
+    font-size: 5rem;
+    width: 15rem;
+    height: 4rem;
+    background-color: orangered;
+    margin-left: 3rem;
+}
+
+.bio {
+    width: 60%;
+    height: 20rem;
+    margin-left: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.bio h3 {
+    font-size: large;
+    font-stretch: expanded;
 }
 
 
@@ -154,13 +181,17 @@ h4 {
 
 .skill-section {
     width: 100%;
-    height: 40rem;
-    /* background-color: aliceblue; */
-    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+    height: 30rem;
+    background-color: aliceblue;
+    /* background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%); */
 }
 
 .section-name {
-    margin-bottom: -3rem;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    font-weight: bolder;
+    color: orangered;
+    padding-left: 50%;
 }
 
 .section-name h1 {
@@ -179,17 +210,17 @@ h4 {
 .frameworks,
 .additional-skills {
     width: 30rem;
-    height: 30rem;
-    /* background-color: antiquewhite; */
-    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+    height: 20rem;
+    background-color: antiquewhite;
+    /* background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%); */
     padding: 2rem;
-    margin: auto;
+    margin: 1rem;
     border-radius: 3rem;
 }
 
 .skill-header {
     width: 27rem;
-    height: 10rem;
+    height: 3rem;
 }
 
 .skill-items {
@@ -224,8 +255,8 @@ h4 {
 .project-section {
     width: 100%;
     height: 40rem;
-    /* background-color: aliceblue; */
-    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+    background-color: aliceblue;
+    /* background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%); */
 }
 
 .project-content {
@@ -269,7 +300,8 @@ h4 {
     width: 100%;
     height: 40rem;
     /* background-color: rgb(53, 125, 187); */
-    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+    /* background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%); */
+    background-color: aliceblue;
 }
 
 .education-content {
@@ -304,6 +336,69 @@ h4 {
 .institute-name {
     margin-left: 1rem;
 }
+
+.contact-section {
+    width: 100%;
+    height: 10rem;
+    background-color: aliceblue;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+.contacts-content {
+    width: 80%;
+    height: 8rem;
+    margin-left: 10%;
+    margin-top: 2.8rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contacts {
+    width: 6rem;
+    height: 6rem;
+    /* background-color: black; */
+}
+
+.contacts:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: all .3s;
+}
+
+.contacts img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* akdjfauhfadjfjadfhadjfnaosilh */
+
+
+/* akdjfauhfadjfjadfhadjfnaosilh */
+
+
+/* akdjfauhfadjfjadfhadjfnaosilh */
+
+
+/* akdjfauhfadjfjadfhadjfnaosilh */
+
+
+/* akdjfauhfadjfjadfhadjfnaosilh */
+
+
+/* akdjfauhfadjfjadfhadjfnaosilh */
+
+
+/* akdjfauhfadjfjadfhadjfnaosilh */
+
+
+/* akdjfauhfadjfjadfhadjfnaosilh */
+
+
+/* akdjfauhfadjfjadfhadjfnaosilh */
 
 
 /* For Tabs */
@@ -559,6 +654,33 @@ h4 {
 }
 
 
+/* djlfjadhfasdjfdlkjflakdjfasdjlkfj */
+
+
+/* djlfjadhfasdjfdlkjflakdjfasdjlkfj */
+
+
+/* djlfjadhfasdjfdlkjflakdjfasdjlkfj */
+
+
+/* djlfjadhfasdjfdlkjflakdjfasdjlkfj */
+
+
+/* djlfjadhfasdjfdlkjflakdjfasdjlkfj */
+
+
+/* djlfjadhfasdjfdlkjflakdjfasdjlkfj */
+
+
+/* djlfjadhfasdjfdlkjflakdjfasdjlkfj */
+
+
+/* djlfjadhfasdjfdlkjflakdjfasdjlkfj */
+
+
+/* djlfjadhfasdjfdlkjflakdjfasdjlkfj */
+
+
 /* For Mobile */
 
 @media only screen and (max-width: 450px) and (min-width: 300px) {
@@ -714,7 +836,7 @@ h4 {
         background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
     }
     .section-name h6 {
-        padding-left: 45%;
+        padding-left: 35%;
         color: orangered;
     }
     .skill-content {
@@ -843,5 +965,10 @@ h4 {
     }
     .institute-name {
         margin-left: .4rem;
+    }
+    .contact-section {
+        width: 100%;
+        height: 10rem;
+        background-color: black;
     }
 }
