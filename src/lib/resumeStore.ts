@@ -100,11 +100,7 @@ export function incrementDownloads(id: string): void {
   const entry = db.resumes.find((r) => r.id === id);
   if (entry) {
     entry.downloads += 1;
-    try {
-      writeDB(db);
-    } catch (err) {
-      console.warn("Could not save download analytics to disk (normal in Vercel):", err);
-    }
+    writeDB(db);
   }
 }
 
@@ -113,11 +109,7 @@ export function incrementViews(id: string): void {
   const entry = db.resumes.find((r) => r.id === id);
   if (entry) {
     entry.views += 1;
-    try {
-      writeDB(db);
-    } catch (err) {
-      console.warn("Could not save view analytics to disk (normal in Vercel):", err);
-    }
+    writeDB(db);
   }
 }
 
