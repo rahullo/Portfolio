@@ -1,0 +1,18 @@
+{
+  "resumes": [
+    {
+      "id": "resume_v1_1737900000",
+      "filename": "RahulResume_v1.pdf",
+      "originalFilename": "RahulResume.pdf",
+      "publicUrl": "/uploads/resumes/RahulResume_v1.pdf",
+      "uploadedAt": "2025-01-26T10:00:00.000Z",
+      "version": "1.0",
+      "fileSize": 110695,
+      "pages": 1,
+      "isActive": true,
+      "downloads": 1,
+      "views": 8,
+      "notes": "Initial resume version"
+    }
+  ]
+}
