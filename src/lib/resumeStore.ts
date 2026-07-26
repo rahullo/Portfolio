@@ -24,14 +24,15 @@ interface ResumeDB {
 }
 
 function readDB(): ResumeDB {
-  if (!fs.existsSync(DATA_PATH)) {
-    const initial: ResumeDB = { resumes: [] };
-    fs.mkdirSync(path.dirname(DATA_PATH), { recursive: true });
-    fs.writeFileSync(DATA_PATH, JSON.stringify(initial, null, 2));
-    return initial;
+  try {
+    if (!fs.existsSync(DATA_PATH)) {
+      return { resumes: [] };
+    }
+    const raw = fs.readFileSync(DATA_PATH, "utf-8");
+    return JSON.parse(raw) as ResumeDB;
+  } catch {
+    return { resumes: [] };
   }
-  const raw = fs.readFileSync(DATA_PATH, "utf-8");
-  return JSON.parse(raw) as ResumeDB;
 }
 
 function writeDB(db: ResumeDB): void {
@@ -39,8 +40,49 @@ function writeDB(db: ResumeDB): void {
 }
 
 export function getActiveResume(): ResumeEntry | null {
-  const db = readDB();
-  return db.resumes.find((r) => r.isActive) || null;
+  // 1. Try the JSON database first
+  try {
+    const db = readDB();
+    const active = db.resumes.find((r) => r.isActive);
+    if (active) {
+      // Verify the physical file still exists
+      const filePath = path.join(UPLOAD_DIR, active.filename);
+      if (fs.existsSync(filePath)) {
+        return active;
+      }
+    }
+  } catch {
+    // JSON read failed (e.g., read-only FS on Vercel) — fall through
+  }
+
+  // 2. Fallback: auto-detect any PDF in the uploads directory
+  try {
+    if (!fs.existsSync(UPLOAD_DIR)) return null;
+    const files = fs.readdirSync(UPLOAD_DIR).filter((f) => f.toLowerCase().endsWith(".pdf"));
+    if (files.length === 0) return null;
+
+    // Pick the first PDF (alphabetically)
+    const filename = files[0];
+    const filePath = path.join(UPLOAD_DIR, filename);
+    const stat = fs.statSync(filePath);
+
+    return {
+      id: "auto-detected",
+      filename,
+      originalFilename: filename,
+      publicUrl: `/uploads/resumes/${filename}`,
+      uploadedAt: stat.mtime.toISOString(),
+      version: "1.0",
+      fileSize: stat.size,
+      pages: 1,
+      isActive: true,
+      downloads: 0,
+      views: 0,
+      notes: "",
+    };
+  } catch {
+    return null;
+  }
 }
 
 export function getAllResumes(): ResumeEntry[] {
