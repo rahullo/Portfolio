@@ -72,10 +72,11 @@ export default function RootLayout({
               jobTitle: "AI Engineer & Product Builder",
               description:
                 "Engineering AI systems from idea to production.",
-              url: "https://rahullohra.dev",
+              url: "https://rahullo.online",
               sameAs: [
-                "https://github.com/rahullohra",
-                "https://linkedin.com/in/rahullohra",
+                "https://github.com/rahullo",
+                "https://www.linkedin.com/in/rahul-lohra/",
+                "https://x.com/rahuullo_",
               ],
             }),
           }}

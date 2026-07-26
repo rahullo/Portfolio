@@ -16,6 +16,12 @@ const LinkedinIcon = ({ size = 18 }: { size?: number }) => (
   </svg>
 );
 
+const TwitterIcon = ({ size = 18 }: { size?: number }) => (
+  <svg width={size} height={size} viewBox="0 0 24 24" fill="currentColor">
+    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+  </svg>
+);
+
 export default function Hero() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
 
@@ -195,9 +201,10 @@ export default function Hero() {
           className="flex justify-center gap-4"
         >
           {[
-            { icon: <GithubIcon size={18} />, href: "https://github.com/rahullohra", label: "GitHub" },
-            { icon: <LinkedinIcon size={18} />, href: "https://linkedin.com/in/rahullohra", label: "LinkedIn" },
-            { icon: <Mail size={18} />, href: "mailto:rahullohra.work@gmail.com", label: "Email" },
+            { icon: <GithubIcon size={18} />, href: "https://github.com/rahullo", label: "GitHub" },
+            { icon: <LinkedinIcon size={18} />, href: "https://www.linkedin.com/in/rahul-lohra/", label: "LinkedIn" },
+            { icon: <TwitterIcon size={18} />, href: "https://x.com/rahuullo_", label: "Twitter" },
+            { icon: <Mail size={18} />, href: "mailto:rahullohra987@gmail.com", label: "Email" },
           ].map((social) => (
             <a
               key={social.label}

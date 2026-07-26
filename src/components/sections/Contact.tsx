@@ -23,6 +23,12 @@ const LinkedinIcon = ({ size = 18 }: { size?: number }) => (
   </svg>
 );
 
+const TwitterIcon = ({ size = 18 }: { size?: number }) => (
+  <svg width={size} height={size} viewBox="0 0 24 24" fill="currentColor">
+    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+  </svg>
+);
+
 export default function Contact() {
   const ref = useRef(null);
   const inView = useInView(ref, { once: true, margin: "-100px" });
@@ -73,18 +79,23 @@ export default function Contact() {
   const contactLinks = [
     {
       icon: <Mail size={18} />,
-      label: "rahullohra.work@gmail.com",
-      href: "mailto:rahullohra.work@gmail.com",
+      label: "rahullohra987@gmail.com",
+      href: "mailto:rahullohra987@gmail.com",
     },
     {
       icon: <GithubIcon size={18} />,
-      label: "github.com/rahullohra",
-      href: "https://github.com/rahullohra",
+      label: "github.com/rahullo",
+      href: "https://github.com/rahullo",
     },
     {
       icon: <LinkedinIcon size={18} />,
-      label: "linkedin.com/in/rahullohra",
-      href: "https://linkedin.com/in/rahullohra",
+      label: "linkedin.com/in/rahul-lohra",
+      href: "https://www.linkedin.com/in/rahul-lohra/",
+    },
+    {
+      icon: <TwitterIcon size={18} />,
+      label: "x.com/rahuullo_",
+      href: "https://x.com/rahuullo_",
     },
   ];
 

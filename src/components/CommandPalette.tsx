@@ -68,7 +68,7 @@ export default function CommandPalette() {
       icon: <Mail size={16} />,
       label: "Send Email",
       action: () => {
-        window.location.href = "mailto:rahullohra.work@gmail.com";
+        window.location.href = "mailto:rahullohra987@gmail.com";
         setOpen(false);
       },
     },

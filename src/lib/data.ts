@@ -3,10 +3,11 @@ export const siteConfig = {
   title: "Rahul Lohra — AI Engineer & Product Builder",
   description:
     "Engineering AI systems from idea to production. I build intelligent products combining machine learning, scalable backends, and exceptional user experiences.",
-  url: "https://rahullohra.dev",
-  email: "rahullohra.work@gmail.com",
-  github: "https://github.com/rahullohra",
-  linkedin: "https://linkedin.com/in/rahullohra",
+  url: "https://rahullo.online",
+  email: "rahullohra987@gmail.com",
+  github: "https://github.com/rahullo",
+  linkedin: "https://www.linkedin.com/in/rahul-lohra/",
+  twitter: "https://x.com/rahuullo_",
 };
 
 export const heroStats = [
@@ -71,7 +72,7 @@ export const projects = [
     metrics: ["5x faster processing via NLP caching", "Multi-format support", "Async worker architecture"],
     architecture: "Microservice split: Django serves the web layer + user auth, Flask handles async NLP processing. Redis-backed caching layer intercepts repeated queries. Background task queue manages concurrent file conversions.",
     challenges: "Handling large documents without memory overflow required streaming tokenization. Balancing summarization quality vs. speed led to a hybrid extractive-then-abstractive pipeline.",
-    github: "https://github.com/rahullohra",
+    github: "https://github.com/rahullo",
     live: "#",
   },
   {
@@ -93,7 +94,7 @@ export const projects = [
     metrics: ["85% model accuracy", "Zero raw data shared", "Multi-hospital scalability"],
     architecture: "Star topology: Central aggregation server + N client nodes. Each client trains an SGDRegressor on local data, serializes model coefficients, and transmits via TCP sockets. Server performs FedAvg aggregation and broadcasts updated weights.",
     challenges: "Handling non-IID data distributions across hospital nodes required weighted averaging based on dataset size. Network latency management was critical for synchronization rounds.",
-    github: "https://github.com/rahullohra",
+    github: "https://github.com/rahullo",
     live: "#",
   },
 ];
