@@ -9,6 +9,7 @@ import {
   CheckCircle,
   Loader2,
 } from "lucide-react";
+import { showToast } from "@/components/Toast";
 
 const GithubIcon = ({ size = 18 }: { size?: number }) => (
   <svg width={size} height={size} viewBox="0 0 24 24" fill="currentColor">
@@ -40,16 +41,33 @@ export default function Contact() {
     return Object.keys(newErrors).length === 0;
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!validate()) return;
     setFormState("sending");
-    // Simulate send
-    setTimeout(() => {
+
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(form),
+      });
+
+      if (!res.ok) {
+        const data = await res.json();
+        throw new Error(data.error || "Failed to send message");
+      }
+
       setFormState("sent");
+      showToast("Message sent successfully!");
       setForm({ name: "", email: "", message: "" });
       setTimeout(() => setFormState("idle"), 3000);
-    }, 1500);
+    } catch (err) {
+      setFormState("idle");
+      showToast(err instanceof Error ? err.message : "Failed to send message", "error");
+    }
   };
 
   const contactLinks = [
